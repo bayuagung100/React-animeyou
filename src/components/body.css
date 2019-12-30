@@ -1,0 +1,23 @@
+.main-content {
+    position: fixed;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding-top: 60px;
+
+    background: #FAFAFA;
+    z-index: 0;
+}
+.main-content .text-center{text-align:center}
+.main-content .main-content-side {
+    width:16.66666667%;
+    height: auto;
+    float: left;
+}
+
+.main-content .main-content-container {
+    width:66.66666667%;
+    height: auto;
+    float: left;
+}
