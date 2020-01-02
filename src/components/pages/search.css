@@ -1,0 +1,45 @@
+.search-container-box {
+    width: 100%;
+    text-align: center;
+}
+
+.search-container-box .search-box {
+    width: 60%;
+    font-size: 16px;
+    background-image: url('../../searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+.result-for {
+    width: 100%;
+    height: 40px;
+    font-family: Mukta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+    float: left;
+    padding: 5px;
+
+    color: #000000;
+}
+
+.result {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.result .not-found {
+    display: flex;
+    justify-content: center;
+}
+
+.result .loading {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
