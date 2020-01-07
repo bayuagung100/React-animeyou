@@ -1,6 +1,7 @@
 {
   "name": "animeyou",
   "version": "0.1.0",
+  "homepage" : "https://bayuagung100.github.io/React-animeyou/",
   "private": true,
   "dependencies": {
     "@emotion/core": "^10.0.27",
