@@ -1,0 +1,54 @@
+@media screen and (min-width: 769px) {
+    #rocketmeluncur {
+        position: fixed;
+        bottom: 15px;
+        right: 25px;
+        z-index: 99;
+        width: 26px;
+        height: 48px;
+        background: url('../top.png') 50% 0 no-repeat;
+        background-position-x: 50%;
+        background-position-y: 0px;
+        opacity: 0;
+        -webkit-transition: visibility .6s cubic-bezier(.6, .04, .98, .335), opacity .6s cubic-bezier(.6, .04, .98, .335), -webkit-transform .6s cubic-bezier(.6, .04, .98, .335);
+        -moz-transition: visibility .6s cubic-bezier(.6, .04, .98, .335), opacity .6s cubic-bezier(.6, .04, .98, .335), -moz-transform .6s cubic-bezier(.6, .04, .98, .335);
+        transition: visibility .6s cubic-bezier(.6, .04, .98, .335), opacity .6s cubic-bezier(.6, .04, .98, .335), transform .6s cubic-bezier(.6, .04, .98, .335);
+    }
+
+    #rocketmeluncur.showrocket {
+        visibility: visible;
+        opacity: 1;
+        line-height: 110px;
+    }
+
+    #rocketmeluncur:hover {
+        background-position: 50% -62px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #rocketmeluncur {
+        position: fixed;
+        bottom: 70px;
+        right: 15px;
+        z-index: 99;
+        width: 26px;
+        height: 48px;
+        background: url('../top.png') 50% 0 no-repeat;
+        background-position-x: 50%;
+        background-position-y: 0px;
+        opacity: 0;
+        -webkit-transition: visibility .6s cubic-bezier(.6, .04, .98, .335), opacity .6s cubic-bezier(.6, .04, .98, .335), -webkit-transform .6s cubic-bezier(.6, .04, .98, .335);
+        -moz-transition: visibility .6s cubic-bezier(.6, .04, .98, .335), opacity .6s cubic-bezier(.6, .04, .98, .335), -moz-transform .6s cubic-bezier(.6, .04, .98, .335);
+        transition: visibility .6s cubic-bezier(.6, .04, .98, .335), opacity .6s cubic-bezier(.6, .04, .98, .335), transform .6s cubic-bezier(.6, .04, .98, .335);
+    }
+
+    #rocketmeluncur.showrocket {
+        visibility: visible;
+        opacity: 1;
+        line-height: 110px;
+    }
+
+    #rocketmeluncur:hover {
+        background-position: 50% -62px;
+    }
+}

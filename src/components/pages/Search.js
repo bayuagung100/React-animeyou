@@ -3,6 +3,7 @@ import { BallClipRotateMultiple } from 'react-pure-loaders';
 import "./search.css";
 import "../body.css";
 import Header from "../Header";
+import Sidebar from "../Sidebar";
 import Footer from "../Footer";
 
 class Search extends Component {
@@ -59,9 +60,9 @@ class Search extends Component {
                                 <input className="search-box" name="text" type="text" placeholder="Cari anime disini ..." title="Cari anime disini ..." value={this.state.value} onChange={e => this.handleChange(e)} />
                             </form>
                         </div>
-                        <div className="main-container">
-                            <div className="main-navigation-container">
-                                <div className="result-for">Search result for: {this.state.value}</div>
+                        <div className="main-container-search">
+                            <div className="main-navigation-container-search">
+                                <div className="result-for">Search for: {this.state.value}</div>
                             </div>
                             <div className="result">
                                 {
@@ -73,27 +74,54 @@ class Search extends Component {
                                             />
                                         </div>
                                     ) : (
-                                        <div></div>
-                                    )
+                                            <div></div>
+                                        )
                                 }
                                 {
                                     this.state.meals ? (
                                         <div>
                                             {
-                                                this.state.meals.map((meal, index) => (<div key={index}>
-                                                    <h1>{meal.strMeal}</h1>
-                                                    <img src={meal.strMealThumb} alt="meal-thumbnail" />
-                                                </div>))
+                                                this.state.meals.map((meal, index) => (
+                                                    <div key={index} className="main-body">
+                                                        <div className="card">
+                                                            {/* <div className="card-header">
+                                                                <a href="/">
+                                                                    <img src={meal.strMealThumb}alt="sao" />
+                                                                    <div className="block-title">
+                                                                        <h3>{meal.strMeal}</h3>
+                                                                    </div>
+                                                                </a>
+                                                            </div> */}
+                                                            <div className="card-body">
+                                                                <a href="/">
+                                                                    <img src={meal.strMealThumb} alt="sao" />
+                                                                </a>
+                                                                <div className="block-eps"><h3>Live Action</h3></div>
+                                                                
+                                                                <div className="block-view">
+                                                                    <h4>100 Views</h4>
+                                                                </div>
+                                                                <a href="/">
+                                                                    <div className="block-title">
+                                                                        <h3>{meal.strMeal}</h3>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                ))
                                             }
                                         </div>
                                     ) : (
                                             <div className="not-found">
-                                                <h3>No posts found. Try a different search?</h3>
+                                                <h3>Tidak ada anime yang ditemukan. Coba cari yang lain?</h3>
                                             </div>
                                         )
                                 }
                             </div>
                         </div>
+
+                        <Sidebar />
                     </div>
                 </div>
                 <Footer />

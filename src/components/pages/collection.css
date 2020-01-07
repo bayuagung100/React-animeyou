@@ -1,0 +1,39 @@
+.main-container-collection {
+    width: 68%;
+    height: auto;
+    background:
+        #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    float: left;
+    margin: 0 20px 0 20px;
+    padding-bottom: 30px;
+}
+
+.main-container-collection .main-body {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main-container-collection .main-navigation-container-collection {
+    width: 100%;
+    height: 50px;
+    background:
+        #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main-container-collection .main-navigation-container-collection .main-navigation-title {
+    width: 100%;
+    height: 40px;
+    font-family: Mukta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+    float: left;
+    padding: 5px;
+
+    color: #000000;
+}
