@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import "./login.css";
 import { BrowserRouter, Redirect } from "react-router-dom";
-// import axios from "axios";
+import axios from "axios";
+
 
 
 class Login extends Component {
@@ -15,21 +16,30 @@ class Login extends Component {
             }
         };
         this.inputChange = this.inputChange.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
     }
 
     onSubmit(e) {
         e.preventDefault();
-
-        this.setState({
-            login: true
+        axios.post('http://localhost:9000/auth',{
+            username: this.state.auth.username,
+            password: this.state.auth.password
+        })
+        .then(function (response) {
+            console.log(response);
+        })
+        .catch(function (error) {
+            console.log(error);
         });
+        
     }
+
     inputChange(e) {
         let newauth = { ...this.state.auth };
         newauth[e.target.name] = e.target.value;
         this.setState({
             auth: newauth
-        });
+        }, () => console.log(this.state.auth));
     }
 
     componentDidMount() {

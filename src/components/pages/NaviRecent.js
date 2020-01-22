@@ -8,7 +8,7 @@ class NaviRecent extends Component {
                     <div className="card">
                         <div className="card-header">
                             <a href="/">
-                                <img src="../sao.jpg" alt="sao" />
+                                <img src="sao.JPG" alt="sao" />
                                 <div className="block-title">
                                     <h3>sword art online alternative: ggo</h3>
                                 </div>
@@ -16,7 +16,7 @@ class NaviRecent extends Component {
                         </div>
                         <div className="card-body">
                             <a href="/">
-                                <img src="../sao.jpg" alt="sao" />
+                                <img src="sao.JPG" alt="sao" />
                             </a>
                             <div className="block-eps"><h3>12 [END]</h3></div>
                             <div className="block-type"><h3>Tv</h3></div>
@@ -33,7 +33,7 @@ class NaviRecent extends Component {
                     <div className="card">
                         <div className="card-header">
                             <a href="/">
-                                <img src="../sao.jpg" alt="sao" />
+                                <img src="sao.JPG" alt="sao" />
                                 <div className="block-title">
                                     <h3>sword art online alternative: ggo</h3>
                                 </div>
@@ -41,7 +41,7 @@ class NaviRecent extends Component {
                         </div>
                         <div className="card-body">
                             <a href="/">
-                                <img src="../sao.jpg" alt="sao" />
+                                <img src="sao.JPG" alt="sao" />
                             </a>
                             <div className="block-eps"><h3>12 [END]</h3></div>
                             <div className="block-type"><h3>Tv</h3></div>
@@ -58,7 +58,7 @@ class NaviRecent extends Component {
                     <div className="card">
                         <div className="card-header">
                             <a href="/">
-                                <img src="../sao.jpg" alt="sao" />
+                                <img src="sao.JPG" alt="sao" />
                                 <div className="block-title">
                                     <h3>sword art online alternative: ggo</h3>
                                 </div>
@@ -66,7 +66,7 @@ class NaviRecent extends Component {
                         </div>
                         <div className="card-body">
                             <a href="/">
-                                <img src="../sao.jpg" alt="sao" />
+                                <img src="sao.JPG" alt="sao" />
                             </a>
                             <div className="block-eps"><h3>12 [END]</h3></div>
                             <div className="block-type"><h3>Tv</h3></div>
@@ -83,7 +83,7 @@ class NaviRecent extends Component {
                     <div className="card">
                         <div className="card-header">
                             <a href="/">
-                                <img src="../sao.jpg" alt="sao" />
+                                <img src="sao.JPG" alt="sao" />
                                 <div className="block-title">
                                     <h3>sword art online alternative: ggo</h3>
                                 </div>
@@ -91,7 +91,7 @@ class NaviRecent extends Component {
                         </div>
                         <div className="card-body">
                             <a href="/">
-                                <img src="../sao.jpg" alt="sao" />
+                                <img src="sao.JPG" alt="sao" />
                             </a>
                             <div className="block-eps"><h3>12 [END]</h3></div>
                             <div className="block-type"><h3>Tv</h3></div>
