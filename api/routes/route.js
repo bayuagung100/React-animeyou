@@ -5,5 +5,6 @@ module.exports = function (app) {
 
     //url homenya
     app.route('/').get(url.index);
-
+    app.route('/test').get(url.index);
+    app.route('/auth').post(url.auth);
 };
