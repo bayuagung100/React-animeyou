@@ -8,8 +8,8 @@ import App from './components/App';
 import Search from './components/pages/Search';
 import Collection from './components/pages/Collection';
 
-import Login from './admin/Login';
-import Dashboard from "./admin/Index";
+import Login from './components/admin/Login';
+import Dashboard from "./components/admin/Index";
 
 import Scroll from 'react-scroll';
 var scroll = Scroll.animateScroll;
@@ -23,7 +23,7 @@ class Router extends Component {
     render() {
         return (
             <BrowserRouter>
-                <div id="rocketmeluncur" className="showrocket" onClick={this.scrollToTop} title="Go to top"></div>
+                {/* <div id="rocketmeluncur" className="showrocket" onClick={this.scrollToTop} title="Go to top"></div> */}
                 <Route path="/" exact component={App} />
 
                 {/* <Route path="/" component={App} /> */}
@@ -36,8 +36,9 @@ class Router extends Component {
                 <Route path="/search" component={Search} />
                 <Route path="/collection" component={Collection} />
 
-                <Route path="/auth" component={Login} />
                 <Route path="/admin" component={Dashboard} />
+                <Route path="/auth" component={Login} />
+                
             </BrowserRouter>
         );
     }
